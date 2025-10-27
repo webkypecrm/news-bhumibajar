@@ -31,14 +31,14 @@ createRoot(document.getElementById("root")).render(
           />
 
           {/* Less specific after */}
-          <Route path="/podcast" element={<Podcast />} />
+          {/* <Route path="/podcast" element={<Podcast />} />
           <Route path="/video-details" element={<VideoDetails />} />
           <Route path="/news-search-list" element={<HeaderSearchList />} />
           <Route path="/tag-list" element={<TagList />} />
           <Route path="/privacy-page" element={<Privacy />} />
           <Route path="/about-page" element={<About />} />
           <Route path="/disclaimer-page" element={<Disclaimer />} />
-          <Route path="/termscondition-page" element={<TermsCondition />} />
+          <Route path="/termscondition-page" element={<TermsCondition />} /> */}
 
           <Route path="/:slug" element={<Listing />} />
 

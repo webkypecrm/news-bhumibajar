@@ -31,11 +31,11 @@ const TermsCondition = () => {
   return (
     <Fragment>
       <Helmet>
-        <title>{"Terms & Conditions | Realty Samachar"}</title>
+        <title>{"Terms & Conditions | News Bhumibajar"}</title>
         <meta
           name="description"
           content={
-            "Review the Terms and Conditions governing your use of Realty Samachar. Understand your rights, responsibilities, and our service policies."
+            "Review the Terms and Conditions governing your use of News Bhumibajar. Understand your rights, responsibilities, and our service policies."
           }
         />
         <meta name="keywords" content={""} />

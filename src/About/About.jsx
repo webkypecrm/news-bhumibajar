@@ -182,7 +182,7 @@ const About = () => {
                       <br />
                       <p>
                         Whether you are buying a home, investing in property, or
-                        just trying to stay informed, Realty Samachar is here to
+                        just trying to stay informed, News Bhumibajar is here to
                         help you make better decisions with the right knowledge.
                       </p>
                       <br />

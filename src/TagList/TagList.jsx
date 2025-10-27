@@ -376,9 +376,9 @@ const TagList = () => {
                                             <Link
                                               to="#"
                                               className="author-name tie-icon"
-                                              title="Realty Samachar"
+                                              title="News Bhumibajar"
                                             >
-                                              Realty Samachar
+                                              News Bhumibajar
                                             </Link>
                                           </span>
                                         </span>

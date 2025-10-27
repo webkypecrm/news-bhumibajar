@@ -117,11 +117,11 @@ const Footer = () => {
                     <div className="about-author about-content-wrapper">
                       <img
                         alt=""
-                        src="Untitled-3-01-01.png"
-                        style={{ marginTop: 0, marginBottom: 0, width: 200 }}
+                        src="/logo.png"
+                        style={{ marginTop: 0, marginBottom: 0, width: 75 }}
                         className="about-author-img lazy-img"
-                        width={280}
-                        height={47}
+                        width={100}
+                        height={100}
                       />
                     </div>
                     <div className="clearfix" />
@@ -308,7 +308,7 @@ const Footer = () => {
                     <a
                       className="social-link twitter-social-icon"
                       target="_blank"
-                      href="https://x.com/realty_samachar"
+                      href="#"
                       rel="noreferrer"
                     >
                       <span className="tie-social-icon tie-icon-twitter" />

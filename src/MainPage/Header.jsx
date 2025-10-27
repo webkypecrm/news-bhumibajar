@@ -135,7 +135,7 @@ const Header = ({ tieSkin = "dark", openPopup, openSideBar }) => {
                 className="image-logo"
                 style={{ margin: "5px  0px" }}
               >
-                <a title="Realty Samachar" href="/">
+                <a title="News Bhumibajar" href="/">
                   <picture
                     id="tie-logo-default"
                     className="tie-logo-default tie-logo-picture"
@@ -150,7 +150,7 @@ const Header = ({ tieSkin = "dark", openPopup, openSideBar }) => {
                       alt="Jannah "
                       width={250}
                       height={35}
-                      style={{ maxWidth: 165 }}
+                      style={{ maxWidth: 75 }}
                     />
                   </picture>
                   <picture
@@ -183,7 +183,7 @@ const Header = ({ tieSkin = "dark", openPopup, openSideBar }) => {
                       className="social-link youtube-social-icon"
                       rel="external noopener nofollow"
                       target="_blank"
-                      href="https://www.youtube.com/@RealtyDart"
+                      href="#"
                     >
                       <span className="tie-social-icon tie-icon-youtube" />
                       <span className="screen-reader-text">YouTube</span>
@@ -205,7 +205,7 @@ const Header = ({ tieSkin = "dark", openPopup, openSideBar }) => {
                       className="social-link twitter-social-icon"
                       rel="external noopener nofollow"
                       target="_blank"
-                      href="https://x.com/realty_samachar"
+                      href="#"
                     >
                       <span className="tie-social-icon tie-icon-twitter" />
                       <span className="screen-reader-text">X</span>

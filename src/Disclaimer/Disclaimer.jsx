@@ -61,7 +61,7 @@ const Disclaimer = () => {
                     >
                       <h3>General Disclaimer</h3>
                       <p className="paragraph-spacing">
-                        Realty Samachar is a news and information platform
+                        News Bhumibajar is a news and information platform
                         dedicated to sharing real estate updates from across
                         India. The information, articles, and opinions published
                         on this website are for general awareness only and
@@ -71,7 +71,7 @@ const Disclaimer = () => {
                       <br />
                       <p className="paragraph-spacing">
                         While we strive to verify and present accurate and
-                        timely information, Realty Samachar does not guarantee
+                        timely information, News Bhumibajar does not guarantee
                         the completeness, reliability, or absolute accuracy of
                         any content. We are not responsible for any loss,
                         damage, or consequences arising from the use of
