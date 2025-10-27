@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'tielabs-fonticon';
+  src: url('/fonts/tielabs-fonticon.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tie-social-icon {
+  font-family: 'tielabs-fonticon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Example icon */
+.tie-icon-soundcloud::before {
+  content: "\e90a"; /* Replace this code with the real Unicode value */
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+
+  <url>
+    <loc>https://www.realtysamachar.com/news/real-estate-news/industrial/yeida-allots-200-acres-to-escorts-kubota-for-indian-rupee4500-cr-tractor-plant</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Realty Samachar</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-08-20T12:00:00+05:30</news:publication_date>
+      <news:title>YEIDA Allots 200 Acres to Escorts Kubota for ₹4,500 Cr Tractor Plant</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://www.realtysamachar.com/news/real-estate-news/infra/greater-noida-to-build-indian-rupee250cr-elevated-road-from-iteda-to-crossings-via-shahberi</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Realty Samachar</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-08-20T12:00:00+05:30</news:publication_date>
+      <news:title>Greater Noida to Build ₹250 Cr Elevated Road from ITEDA to Crossings via Shahberi</news:title>
+    </news:news>
+  </url>
+
+</urlset>
