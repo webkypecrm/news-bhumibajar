@@ -146,7 +146,7 @@ const Header = ({ tieSkin = "dark", openPopup, openSideBar }) => {
                     /> */}
                     <img
                       className="tie-logo-img-default tie-logo-img"
-                      src="https://res.cloudinary.com/drj0uehgx/image/upload/v1751115972/logo_qrixw3.png"
+                      src="/logo.png"
                       alt="Jannah "
                       width={320}
                       height={50}
