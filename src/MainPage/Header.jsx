@@ -148,8 +148,8 @@ const Header = ({ tieSkin = "dark", openPopup, openSideBar }) => {
                       className="tie-logo-img-default tie-logo-img"
                       src="/logo.png"
                       alt="Jannah "
-                      width={320}
-                      height={50}
+                      width={250}
+                      height={35}
                       style={{ maxWidth: 165 }}
                     />
                   </picture>
@@ -166,7 +166,7 @@ const Header = ({ tieSkin = "dark", openPopup, openSideBar }) => {
                       className="tie-logo-img-inverted tie-logo-img"
                       loading="lazy"
                       id="tie-logo-inverted-img"
-                      src="https://res.cloudinary.com/drj0uehgx/image/upload/v1751115972/logo_qrixw3.png"
+                      src="/logo.png"
                       alt="Jannah - Blog Magazine Newspaper buddyPress Theme"
                       width={300}
                       height={49}
