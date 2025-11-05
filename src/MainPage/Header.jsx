@@ -582,15 +582,15 @@ const Header = ({ tieSkin = "dark", openPopup, openSideBar }) => {
             }}
           >
             {/* Breaking Title */}
-            <span
+            {/* <span
               style={{ padding: "0px 10px" }}
               className="breaking-title-text new-breaking-title"
             >
               Breaking News :
-            </span>
+            </span> */}
 
             {/* Ticker Wrapper */}
-            <div
+            {/* <div
               className="ticker-wrapper"
               style={{
                 flex: 1,
@@ -653,7 +653,7 @@ const Header = ({ tieSkin = "dark", openPopup, openSideBar }) => {
                   </span>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
 
           <style>
