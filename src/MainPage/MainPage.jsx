@@ -684,7 +684,7 @@ const MainPage = () => {
   };
 
   const ogImage =
-    "https://res.cloudinary.com/drj0uehgx/image/upload/v1753508730/feviconsamachar-06_mkn9yc.png";
+    "https://bb.webkype.net/assets/images/logo/images.png";
 
   const getHomepageSeoData = async () => {
     setHomepageLoading(true);
@@ -722,7 +722,7 @@ const MainPage = () => {
         <link
           rel="icon"
           type="image/svg+xml"
-          href="https://res.cloudinary.com/drj0uehgx/image/upload/v1753508730/feviconsamachar-06_mkn9yc.png"
+          href="https://bb.webkype.net/assets/images/logo/images.png"
         />
         <title>{homepageSeoFormData?.metaTitle}</title>
         <meta
@@ -777,7 +777,7 @@ const MainPage = () => {
                 openPopup={openPopup}
                 openSideBar={openSideBar}
               />
-              <div
+              {/* <div
                 id="tiepost-831-section-1785"
                 className="section-wrapper container-full without-background"
               >
@@ -863,7 +863,7 @@ const MainPage = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div
                 id="tiepost-2488-section-3166"
                 className="section-wrapper container normal-width without-background"
@@ -1695,7 +1695,7 @@ const MainPage = () => {
                                       color: "#0669ff",
                                     }}
                                   >
-                                    Realty Samachar TV
+                                    Bhumi Bazar TV
                                   </h2>
                                 </div>
                               </>
@@ -1889,7 +1889,7 @@ const MainPage = () => {
                     <div className="row" style={{ marginTop: "0PX" }}>
                       {/* residential */}
                       <div
-                        className="tie-col-md-8"
+                        className="tie-col-md-12"
                         // style={{ border: "2px solid black" }}
                       >
                         <div
@@ -1943,8 +1943,8 @@ const MainPage = () => {
                                             </span>
                                           </span>
                                           <img
-                                            width={390}
-                                            height={220}
+                                            // width={390}
+                                            // height={220}
                                             src={`${apiUrl}/uploads/${firstBlog?.image}`}
                                             className="attachment-jannah-image-large size-jannah-image-large lazy-img wp-post-image"
                                             alt={firstBlog?.image_alt}
@@ -1953,7 +1953,8 @@ const MainPage = () => {
                                             style={{
                                               // objectFit: "cover",
                                               borderRadius: "10px",
-                                              width: "390px",
+                                              objectFit : "cover",
+                                              width: "100%",
                                               height: "220px",
                                             }}
                                           />
@@ -1966,9 +1967,9 @@ const MainPage = () => {
                                                   <a
                                                     href="#"
                                                     className="author-name tie-icon"
-                                                    title="Realty Samachar"
+                                                    title="Bhumi Bazar"
                                                   >
-                                                    Realty Samachar
+                                                    Bhumi Bazar
                                                   </a>
                                                 </span>
                                               </span>
@@ -2148,222 +2149,7 @@ const MainPage = () => {
                       </div>
 
                       {/* residential */}
-                      <div className="tie-col-md-4 ">
-                        <div
-                          id="posts-list-widget-6"
-                          className="container-wrapper widget posts-list"
-                        >
-                          <div className="widget-title the-global-title">
-                            <div className="the-subtitle">
-                              Web Stories
-                              {/* <span className="widget-title-icon tie-icon" /> */}
-                            </div>
-                          </div>
-
-                          <div className="mag-box-container clearfix">
-                            <div className="loader-overlay">
-                              <div className="spinner-circle" />
-                            </div>
-
-                            <div className="new-web-stories">
-                              <div
-                                className="progress-container"
-                                ref={progressContainerRef}
-                              ></div>
-
-                              <div className="swiper">
-                                <div
-                                  className="swiper-wrapper"
-                                  style={
-                                    {
-                                      // display: "flex",
-                                      // overflowX: "scroll",
-                                    }
-                                  }
-                                >
-                                  {webStoriesList.map((item, index) => (
-                                    <div
-                                      className="slide-story swiper-slide"
-                                      key={index}
-                                      onClick={() => handleSlideClick(index)}
-                                      style={{
-                                        height: "500px",
-                                        cursor: "pointer",
-                                      }}
-                                    >
-                                      <video
-                                        className="story-video"
-                                        src={`${apiUrl}/uploads/${item.video}`}
-                                        muted
-                                        playsInline
-                                        style={{
-                                          width: "100%",
-                                          height: "100%",
-                                          objectFit: "cover",
-                                        }}
-                                      />
-                                    </div>
-                                  ))}
-                                </div>
-
-                                {/* Modal with vertical swiper */}
-                                <ReelModal
-                                  open={isModalOpen}
-                                  onClose={() => setIsModalOpen(false)}
-                                  stories={webStoriesList}
-                                  startIndex={currentIndex}
-                                />
-
-                                <div
-                                  className="nav-zone-new nav-left"
-                                  onClick={goPrev}
-                                  onMouseDown={pauseProgress}
-                                  onMouseUp={resumeProgress}
-                                  onTouchStart={pauseProgress}
-                                  onTouchEnd={resumeProgress}
-                                ></div>
-
-                                <div
-                                  className="nav-zone-new nav-right"
-                                  onClick={goNext}
-                                  onMouseDown={pauseProgress}
-                                  onMouseUp={resumeProgress}
-                                  onTouchStart={pauseProgress}
-                                  onTouchEnd={resumeProgress}
-                                ></div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className="clearfix" />
-                        </div>
-
-                        {/* Swiper JS (CDN) */}
-                        <div
-                          id="posts-list-widget-50"
-                          className="container-wrapper widget posts-list"
-                          style={{ marginTop: 50 }}
-                        >
-                          {/* Widget Title */}
-                          <div className="widget-title the-global-title">
-                            <div className="the-subtitle">
-                              Featured Posts
-                              <span className="widget-title-icon tie-icon" />
-                            </div>
-                          </div>
-
-                          {/* Scrollable Featured Posts Section */}
-                          <div
-                            className="widget-posts-list-wrapper"
-                            // style={{ height: 600, overflow: "auto" }}
-                          >
-                            <List
-                              height={900}
-                              itemCount={featurePostNewsList.length}
-                              itemSize={101}
-                              width={"100%"}
-                            >
-                              {({ index, style }) => {
-                                const data = featurePostNewsList[index];
-                                return (
-                                  <div style={style} key={index}>
-                                    <li
-                                      className="widget-single-post-item widget-post-list tie-standard"
-                                      style={{
-                                        boxShadow:
-                                          "0 4px 8px rgba(0, 0, 0, 0.1)",
-                                        borderRadius: "8px",
-                                        backgroundColor: "#fff",
-                                        // padding: "6px",
-                                        marginBottom: "15px",
-                                        marginLeft: "10px",
-                                        marginRight: "10px",
-                                      }}
-                                    >
-                                      <div className="post-widget-thumbnail">
-                                        <Link
-                                          to={`/news/${data.blogCategory?.slug}/${data.blogSubCategory?.slug}/${data.slug}`}
-                                          onClick={() =>
-                                            popularClickCount(data.id)
-                                          }
-                                          className="post-thumb"
-                                        >
-                                          <img
-                                            src={`${apiUrl}/uploads/${data?.image}`}
-                                            className="attachment-jannah-image-small size-jannah-image-small lazy-img tie-small-image wp-post-image"
-                                            alt={data?.image_alt}
-                                            loading="lazy"
-                                            decoding="async"
-                                            style={{
-                                              borderRadius: "10px",
-                                              objectFit: "cover",
-                                              width: "110px",
-                                              height: "70px",
-                                            }}
-                                          />
-                                        </Link>
-                                      </div>
-                                      <div className="post-widget-body">
-                                        <Link
-                                          to={`/news/${data.blogCategory?.slug}/${data.blogSubCategory?.slug}/${data.slug}`}
-                                          onClick={() =>
-                                            popularClickCount(data.id)
-                                          }
-                                          style={{ fontSize: "13px" }}
-                                        >
-                                          {data?.title?.split(" ").length > 5
-                                            ? `${data.title
-                                                .split(" ")
-                                                .slice(0, 5)
-                                                .join(" ")}... `
-                                            : data?.title}
-                                        </Link>
-                                        <div className="post-meta">
-                                          <span className="date meta-item tie-icon">
-                                            {new Date(
-                                              data?.createdAt
-                                            ).toLocaleDateString("en-US", {
-                                              weekday: "long",
-                                              year: "numeric",
-                                              month: "long",
-                                              day: "numeric",
-                                            })}
-                                          </span>
-                                        </div>
-                                      </div>
-                                    </li>
-                                  </div>
-                                );
-                              }}
-                            </List>
-                          </div>
-
-                          <div className="clearfix" />
-                        </div>
-                        {/* <div
-                          id="stream-item-widget-15"
-                          className="widget stream-item-widget widget-content-only"
-                          style={{ marginTop: 50 }}
-                        >
-                          <div className="stream-item-widget-content">
-                            <span className="stream-title">Advertisement</span>
-                            <a
-                              href="http://tielabs.com/buy/jannah?utm_source=demos&utm_campaign=jannah&utm_content=demo&utm_medium=ads"
-                              target="_blank"
-                              rel="nofollow noopener"
-                            >
-                              <img
-                                className="widget-stream-image"
-                                src="/images/sidebar-1.jpg"
-                                loading="lazy"
-                                width={336}
-                                height={280}
-                                alt=""
-                              />
-                            </a>
-                          </div>
-                        </div> */}
-                      </div>
+                     
                     </div>
                     <div className="clearfix half-box-clearfix" />
                     {/* <div
@@ -2575,9 +2361,9 @@ const MainPage = () => {
                                             <a
                                               href="#"
                                               className="author-name tie-icon"
-                                              title="Realty Samachar"
+                                              title="Bhumi Bazar"
                                             >
-                                              Realty Samachar
+                                                        Bhumi Bazar
                                             </a>
                                           </span>
                                         </span>

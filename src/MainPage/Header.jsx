@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { NewsList } from "../apis/axios";
+import TopNav from "../components/TopNav";
 
 const Header = ({ tieSkin = "dark", openPopup, openSideBar }) => {
   const headerRef = useRef(null);
@@ -122,126 +123,7 @@ const Header = ({ tieSkin = "dark", openPopup, openSideBar }) => {
         id="theme-header"
         className="theme-header header-layout-3 main-nav-dark main-nav-default-dark main-nav-below main-nav-boxed has-stream-item top-nav-active top-nav-light top-nav-default-light top-nav-above has-shadow has-normal-width-logo mobile-header-centered"
       >
-        <nav
-          id="top-nav"
-          className="has-date-breaking-components top-nav header-nav has-breaking-news new-sec-has-breaking-news"
-          aria-label="Secondary Navigation"
-          style={{ border: "none" }}
-        >
-          <div className="container">
-            <div className="topbar-wrapper">
-              <div
-                id="logo"
-                className="image-logo"
-                style={{ margin: "5px  0px" }}
-              >
-                <a title="News Bhumibajar" href="/">
-                  <picture
-                    id="tie-logo-default"
-                    className="tie-logo-default tie-logo-picture"
-                  >
-                    {/* <source
-                      className="tie-logo-source-default tie-logo-source"
-                      srcSet="Untitled-3-01-01.png"
-                    /> */}
-                    <img
-                      className="tie-logo-img-default tie-logo-img"
-                      src="/logo.png"
-                      alt="Jannah "
-                      width={250}
-                      height={35}
-                      style={{ maxWidth: 75 }}
-                    />
-                  </picture>
-                  <picture
-                    id="tie-logo-inverted"
-                    className="tie-logo-inverted tie-logo-picture"
-                  >
-                    <source
-                      className="tie-logo-source-inverted tie-logo-source"
-                      id="tie-logo-inverted-source"
-                      srcSet="https://res.cloudinary.com/drj0uehgx/image/upload/v1751115972/logo_qrixw3.png"
-                    />
-                    <img
-                      className="tie-logo-img-inverted tie-logo-img"
-                      loading="lazy"
-                      id="tie-logo-inverted-img"
-                      src="/logo.png"
-                      alt="Jannah - Blog Magazine Newspaper buddyPress Theme"
-                      width={300}
-                      height={49}
-                      style={{ maxHeight: "49px !important", width: "auto" }}
-                    />
-                  </picture>
-                  <h1 className="h1-off">Framed</h1>
-                </a>
-              </div>
-              <div className="tie-alignright">
-                <ul className="components">
-                  <li className="social-icons-item">
-                    <a
-                      className="social-link youtube-social-icon"
-                      rel="external noopener nofollow"
-                      target="_blank"
-                      href="#"
-                    >
-                      <span className="tie-social-icon tie-icon-youtube" />
-                      <span className="screen-reader-text">YouTube</span>
-                    </a>
-                  </li>
-                  <li className="social-icons-item">
-                    <a
-                      className="social-link facebook-social-icon"
-                      rel="external noopener nofollow"
-                      target="_blank"
-                      href="https://www.facebook.com/share/16pB9MHAni/"
-                    >
-                      <span className="tie-social-icon tie-icon-facebook" />
-                      <span className="screen-reader-text">Facebook</span>
-                    </a>
-                  </li>
-                  <li className="social-icons-item">
-                    <a
-                      className="social-link twitter-social-icon"
-                      rel="external noopener nofollow"
-                      target="_blank"
-                      href="#"
-                    >
-                      <span className="tie-social-icon tie-icon-twitter" />
-                      <span className="screen-reader-text">X</span>
-                    </a>
-                  </li>
-                  <li className="social-icons-item">
-                    <a
-                      className="social-link instagram-social-icon"
-                      rel="external noopener nofollow"
-                      target="_blank"
-                      href="https://www.instagram.com/p/DNQB1l1xrzD"
-                    >
-                      <span className="tie-social-icon tie-icon-instagram" />
-                      <span className="screen-reader-text">Instagram</span>
-                    </a>
-                  </li>
-                  <li className=" popup-login-icon menu-item custom-menu-link">
-                    {" "}
-                    <a
-                      href="#"
-                      className="lgoin-btn tie-popup-trigger"
-                      onClick={() => openPopup(true)}
-                    >
-                      {" "}
-                      <span
-                        className="tie-icon-author"
-                        aria-hidden="true"
-                      />{" "}
-                      <span className="screen-reader-text">Log In</span>{" "}
-                    </a>{" "}
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </nav>
+    <TopNav />
         <div
           className="container header-container responsive-padding"
           // style={{
@@ -264,7 +146,7 @@ const Header = ({ tieSkin = "dark", openPopup, openSideBar }) => {
             >
               <a href="/" rel="noopener noreferrer">
                 <img
-                  src="https://res.cloudinary.com/drj0uehgx/image/upload/v1751115972/logo_qrixw3.png"
+                  src="https://bb.webkype.net/assets/images/logo/images.png"
                   alt="Logo"
                   className="sidebar-logo-outer"
                 />
@@ -292,7 +174,7 @@ const Header = ({ tieSkin = "dark", openPopup, openSideBar }) => {
                         id="mobile-menu-icon"
                         onClick={() => setIsSidebarOpen(true)}
                       >
-                        <span className="tie-mobile-menu-icon nav-icon is-layout-1" />
+                        <span className="tie-mobile-menu-icon nav-icon is-layout-1"/>
                         <span className="screen-reader-text">Menu</span>
                       </a>
                     </li>
@@ -489,7 +371,7 @@ const Header = ({ tieSkin = "dark", openPopup, openSideBar }) => {
             {/* Header inside sidebar */}
             <div className="sidebar-header">
               <img
-                src="https://res.cloudinary.com/drj0uehgx/image/upload/v1751115972/logo_qrixw3.png"
+                src="https://bb.webkype.net/assets/images/logo/images.png"
                 alt="Logo"
                 className="sidebar-logo"
               />
@@ -582,15 +464,15 @@ const Header = ({ tieSkin = "dark", openPopup, openSideBar }) => {
             }}
           >
             {/* Breaking Title */}
-            <span
+            {/* <span
               style={{ padding: "0px 10px" }}
               className="breaking-title-text new-breaking-title"
             >
               Breaking News :
-            </span>
+            </span> */}
 
             {/* Ticker Wrapper */}
-            <div
+            {/* <div
               className="ticker-wrapper"
               style={{
                 flex: 1,
@@ -653,7 +535,7 @@ const Header = ({ tieSkin = "dark", openPopup, openSideBar }) => {
                   </span>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
 
           <style>
