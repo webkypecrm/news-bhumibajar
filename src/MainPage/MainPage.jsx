@@ -684,7 +684,7 @@ const MainPage = () => {
   };
 
   const ogImage =
-    "https://res.cloudinary.com/drj0uehgx/image/upload/v1753508730/feviconsamachar-06_mkn9yc.png";
+    "https://bb.webkype.net/assets/images/logo/images.png";
 
   const getHomepageSeoData = async () => {
     setHomepageLoading(true);
@@ -722,7 +722,7 @@ const MainPage = () => {
         <link
           rel="icon"
           type="image/svg+xml"
-          href="https://res.cloudinary.com/drj0uehgx/image/upload/v1753508730/feviconsamachar-06_mkn9yc.png"
+          href="https://bb.webkype.net/assets/images/logo/images.png"
         />
         <title>{homepageSeoFormData?.metaTitle}</title>
         <meta
@@ -1695,7 +1695,7 @@ const MainPage = () => {
                                       color: "#0669ff",
                                     }}
                                   >
-                                    Realty Samachar TV
+                                    Bhumi Bazar TV
                                   </h2>
                                 </div>
                               </>
@@ -1967,9 +1967,9 @@ const MainPage = () => {
                                                   <a
                                                     href="#"
                                                     className="author-name tie-icon"
-                                                    title="Realty Samachar"
+                                                    title="Bhumi Bazar"
                                                   >
-                                                    Realty Samachar
+                                                    Bhumi Bazar
                                                   </a>
                                                 </span>
                                               </span>
@@ -2361,9 +2361,9 @@ const MainPage = () => {
                                             <a
                                               href="#"
                                               className="author-name tie-icon"
-                                              title="Realty Samachar"
+                                              title="Bhumi Bazar"
                                             >
-                                              Realty Samachar
+                                                        Bhumi Bazar
                                             </a>
                                           </span>
                                         </span>
