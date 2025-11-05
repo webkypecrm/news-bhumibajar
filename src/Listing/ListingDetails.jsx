@@ -431,11 +431,11 @@ const ListingDetails = () => {
                                       }}
                                     >
                                       {" "}
-                                      <a href="  /members/ashraf/index.html">
+                                      <a href="/members/ashraf/index.html">
                                         <img
                                           alt=""
-                                          src="https://res.cloudinary.com/drj0uehgx/image/upload/v1751114108/Untitled_design_-_2025-06-28T175041.634_pmjknp.jpg"
-                                          data-src="https://res.cloudinary.com/drj0uehgx/image/upload/v1751114108/Untitled_design_-_2025-06-28T175041.634_pmjknp.jpg"
+                                          src="https://bb.webkype.net/assets/images/logo/images.png"
+                                          data-src="https://bb.webkype.net/assets/images/logo/images.png"
                                           // className="lazy-img avatar avatar-140 photo"
                                           height={540}
                                           width={540}
@@ -449,7 +449,7 @@ const ListingDetails = () => {
                                         className="author-name tie-icon"
                                         title="Realty Samachar"
                                       >
-                                        Realty Samachar
+                                        Bhumi Bajar
                                       </a>
                                     </span>{" "}
                                     {/* <a
@@ -544,13 +544,13 @@ const ListingDetails = () => {
                               {" "}
                               <a
                                 href={`https://www.facebook.com/sharer.php?u=${encodeURIComponent(
-                                  `https://www.realtysamachar.com/news/${data.blogCategory?.slug}/${data.blogSubCategory?.slug}/${data.slug}`
+                                  `${import.meta.env.VITE_ROOT_URL}/news/${data.blogCategory?.slug}/${data.blogSubCategory?.slug}/${data.slug}`
                                 )}`}
                                 rel="external noopener nofollow"
                                 title={data.title}
                                 target="_blank"
                                 className="facebook-share-btn"
-                                data-raw={`https://www.facebook.com/sharer.php?u=https://www.realtysamachar.com/news/${data.blogCategory?.slug}/${data.blogSubCategory?.slug}/${data.slug}`}
+                                data-raw={`https://www.facebook.com/sharer.php?u=${import.meta.env.VITE_ROOT_URL}/news/${data.blogCategory?.slug}/${data.blogSubCategory?.slug}/${data.slug}`}
                               >
                                 <span className="share-btn-icon tie-icon-facebook" />
                                 <span className="social-text">Facebook</span>
@@ -558,7 +558,7 @@ const ListingDetails = () => {
                               <a
                                 href={`https://x.com/intent/post?text=${encodeURIComponent(
                                   data.title
-                                )}&url=https://www.realtysamachar.com/news/${
+                                )}&url=${import.meta.env.VITE_ROOT_URL}/news/${
                                   data.blogCategory?.slug
                                 }/${data.blogSubCategory?.slug}/${data.slug}`}
                                 rel="external noopener nofollow"
@@ -567,7 +567,7 @@ const ListingDetails = () => {
                                 className="twitter-share-btn large-share-button"
                                 data-raw={`https://x.com/intent/post?text=${encodeURIComponent(
                                   data.title
-                                )}&url=https://www.realtysamachar.com/news/${
+                                )}&url=${import.meta.env.VITE_ROOT_URL}/news/${
                                   data.blogCategory?.slug
                                 }/${data.blogSubCategory?.slug}/${data.slug}`}
                               >
@@ -575,17 +575,17 @@ const ListingDetails = () => {
                               </a>
                               <a
                                 href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(
-                                  `https://www.realtysamachar.com/news/${data.blogCategory?.slug}/${data.blogSubCategory?.slug}/${data.slug}`
+                                  `${import.meta.env.VITE_ROOT_URL}/news/${data.blogCategory?.slug}/${data.blogSubCategory?.slug}/${data.slug}`
                                 )}&title=${encodeURIComponent(
                                   data.title
                                 )}&source=${encodeURIComponent(
-                                  "Realty Samachar"
+                                  "Bhumi Bazar"
                                 )}`}
                                 rel="external noopener nofollow"
                                 title={data.title}
                                 target="_blank"
                                 className="linkedin-share-btn"
-                                data-raw={`https://www.linkedin.com/shareArticle?mini=true&url=https://www.realtysamachar.com/news/${
+                                data-raw={`https://www.linkedin.com/shareArticle?mini=true&url=${import.meta.env.VITE_ROOT_URL}/news/${
                                   data.blogCategory?.slug
                                 }/${data.blogSubCategory?.slug}/${
                                   data.slug
@@ -598,7 +598,7 @@ const ListingDetails = () => {
                               </a>
                               <a
                                 href={`https://api.whatsapp.com/send?text=${encodeURIComponent(
-                                  `${data.title} - https://www.realtysamachar.com/news/${data.blogCategory?.slug}/${data.blogSubCategory?.slug}/${data.slug}`
+                                  `${data.title} - ${import.meta.env.VITE_ROOT_URL}/news/${data.blogCategory?.slug}/${data.blogSubCategory?.slug}/${data.slug}`
                                 )}`}
                                 rel="external noopener nofollow"
                                 title="Share on WhatsApp"
